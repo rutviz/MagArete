@@ -20,17 +20,6 @@
       	$(".button-collapse").sideNav();
       	 $('.parallax').parallax();
       });
-	  /*Drop Down inti */
-	  $('.dropdown-button').dropdown({
-      inDuration: 300,
-      outDuration: 225,
-      constrain_width: false, // Does not change width of dropdown to that of the activator
-      hover: true, // Activate on hover
-      gutter: 0, // Spacing from edge
-      belowOrigin: true, // Displays dropdown below the button
-      alignment: 'left' // Displays dropdown with edge aligned to the left of button
-    }
-  );
       </script>
     </head>
 
@@ -59,13 +48,13 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="#1">Home</a></li>
         <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a href="#1">PU Happenings</a></li>
         <li><a href="#1">About</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="#1">Home</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li ><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a href="#1">PU Happenings</a></li>
         <li><a href="#1">About</a></li>
     </div>
