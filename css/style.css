@@ -1,4 +1,4 @@
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
 
 body {
@@ -39,7 +39,7 @@ nav .brand-logo {
 }
 
 .row {
-	margin-left: 3%;
+	margin-left: 4%;
 	margin-top: 3%;
 }
 
@@ -48,9 +48,13 @@ nav .brand-logo {
 }
 
 .parallax-container {
-	//height: 300px;
+	height: 750px;
 	background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+.row .col.m3 {
+
 }
