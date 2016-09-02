@@ -19,7 +19,23 @@
       $( document ).ready(function(){
       	$(".button-collapse").sideNav();
       	 $('.parallax').parallax();
+		 $('.scrollspy').scrollSpy();
       });
+	  
+	  /* Scroll Fire	  */
+	  var options = [
+			{selector: '.class', offset: 800, callback: function(el) {
+			  Materialize.fadeIn($(el));
+			} }
+		];
+	Materialize.scrollFire(options);
+	
+	/* modal js*/
+	$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+		$('.modal-trigger').leanModal();
+	});
+  
       </script>
     </head>
 
@@ -66,13 +82,15 @@
 	    <div class="parallax-container">
     		<div class="parallax"><img src="images/back3.jpg" style=" overflow: none; display: block;"></div>
   		</div>
-  
+	<!--testing  -->
+	 
+	
 	<!-- Cards -->	
-      <div class="row">
+      <div class="col test">
       <div id="heading"> Technical </div> 
     	<div class="row">
       		<div id="past"> <div id="name"> Past </div>
-			    <div class="col m3 ">
+			    <div class="col m3 offset-m1">
 			      	<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator" src="images/article2.png">
@@ -85,10 +103,14 @@
 					    
 					    <div class="card-reveal">
 					      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+						  <div class="col"><img class="circle responsive-img" src="images/user.jpg"></img></div>
 					      <p>This is place for Article</p>
 					    </div>
 					    <div class="card-action">
-					    	<center> <a href="#">This is a link</a> </center>
+					    	<center> <a href="#modal1" class="btn waves-effect waves-red modal-trigger">Read Article</a> </center>
+							<!-- Modal -->
+							
+							
 					    </div>
 			  		</div>
 			  	</div>
@@ -139,7 +161,7 @@
 		</div>
 		<div class="row">
 			<div id="present"> <div id="name"> Present </div> 
-			    <div class="col m3 ">
+			    <div class="col m3 offset-m1">
 			      	<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator" src="images/article2.png">
@@ -206,7 +228,7 @@
 		</div>
 		<div class="row">
 			<div id="future">  <div id="name"> Future </div>
-			    <div class="col m3">
+			    <div class="col m3 offset-m1">
 			      	<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator" src="images/article2.png">
@@ -302,6 +324,12 @@
             	</div>
          	</div>
         </footer>
-
+		<!-- articles -->
+			<div id="modal1" class="modal">
+				<div class="modal-content">
+				  <h4 class="center-align">Modal Header <i class="material-icons right" onclick="{$('#modal1').closeModal();}" style="cursor:pointer">close</i></h4>
+				  <p>A bunch of text<br><br><br><br><br><br><br><br><br><br><br><br>bye Thank you</p>			
+				</div>
+			</div>
     </body>
   </html>
