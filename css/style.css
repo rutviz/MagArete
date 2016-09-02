@@ -38,23 +38,26 @@ nav .brand-logo {
 	 font-family: 'Kavoon', cursive;
 }
 
+.row {
+	margin-left: 4%;
+	margin-top: 3%;
+}
 
 .card:hover {
 	box-shadow: 2rem 3rem 5rem -2rem rgba(0, 0, 0, 0.2);
 }
-.test{
-	margin-left:auto;
-	margin-right:auto;
-	max-width:1200px;
-}
+
 .parallax-container {
 	height: 750px;
-	background-attachment: fixed;
+	
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: auto;
 }
-.userimg{
-	width:100px;
-	height:100px;
+
+#par1 {
+	height: 350px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
 }

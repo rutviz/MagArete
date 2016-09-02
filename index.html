@@ -1,9 +1,10 @@
 <!DOCTYPE html>
   <html>
     <head>
-
+    <title>MagArete: An E-Magazine</title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/style.css"/>
@@ -19,32 +20,26 @@
       $( document ).ready(function(){
       	$(".button-collapse").sideNav();
       	 $('.parallax').parallax();
-		 $('.scrollspy').scrollSpy();
+      	 $('.modal-trigger').leanModal();
       });
-	  
-	  /* Scroll Fire	  */
-	  var options = [
-			{selector: '.class', offset: 800, callback: function(el) {
-			  Materialize.fadeIn($(el));
-			} }
-		];
+
+      var options = [
+	{selector: '#row1', offset: 1000, callback: 'makeVisible("#row1", "bounceInUp")'},
+	{selector: '#row2', offset: 2000, callback: 'makeVisible("#row2", "bounceInUp")'},
+	{selector: '#row3', offset: 3000, callback: 'makeVisible("#row3", "bounceInUp")'}
+
+	];
 	Materialize.scrollFire(options);
+
 	
-	/* modal js*/
-	$(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-		$('.modal-trigger').leanModal();
-	});
-  
+
       </script>
     </head>
 
     <body>
       
 
-	<!-- preloader -->
-	
-	
+
 	<!-- Dropdown Structure -->
 		<ul id="dropdown1" class="dropdown-content">
 		  <li><a href="#!">Technical</a></li>
@@ -70,7 +65,7 @@
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="#1">Home</a></li>
-        <li ><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a href="#1">PU Happenings</a></li>
         <li><a href="#1">About</a></li>
     </div>
@@ -82,15 +77,13 @@
 	    <div class="parallax-container">
     		<div class="parallax"><img src="images/back3.jpg" style=" overflow: none; display: block;"></div>
   		</div>
-	<!--testing  -->
-	 
-	
+  
 	<!-- Cards -->	
-      <div class="col test">
+      <div class="row" id="row1">
       <div id="heading"> Technical </div> 
     	<div class="row">
       		<div id="past"> <div id="name"> Past </div>
-			    <div class="col m3 offset-m1">
+			    <div class="col m3 ">
 			      	<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator" src="images/article2.png">
@@ -103,14 +96,10 @@
 					    
 					    <div class="card-reveal">
 					      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-						  <div class="col"><img class="circle responsive-img" src="images/user.jpg"></img></div>
 					      <p>This is place for Article</p>
 					    </div>
 					    <div class="card-action">
-					    	<center> <a href="#modal1" class="btn waves-effect waves-red modal-trigger">Read Article</a> </center>
-							<!-- Modal -->
-							
-							
+					    	<center> <a href="#modal1" class="btn waves-effect waves-red modal-trigger"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
 					    </div>
 			  		</div>
 			  	</div>
@@ -159,9 +148,18 @@
 			</div>
 			<br> <br> <br> <br> 
 		</div>
+	</div>
+
+		<!-- Parallex Effect -->
+
+	    <div class="parallax-container" id="par1">
+    		<div class="parallax"><img src="images/back3.jpg" style=" overflow: none; display: block;"></div>
+  		</div>
+
+  	<div class="row" id="row2">
 		<div class="row">
 			<div id="present"> <div id="name"> Present </div> 
-			    <div class="col m3 offset-m1">
+			    <div class="col m3 ">
 			      	<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator" src="images/article2.png">
@@ -226,9 +224,17 @@
 			</div>
 			<br> <br> <br> <br> 
 		</div>
+	</div>
+		<!-- Parallex Effect -->
+
+	    <div class="parallax-container" id="par1">
+    		<div class="parallax"><img src="images/back3.jpg" style=" overflow: none; display: block;"></div>
+  		</div>
+
+  	<div class="row" id="row3">
 		<div class="row">
 			<div id="future">  <div id="name"> Future </div>
-			    <div class="col m3 offset-m1">
+			    <div class="col m3">
 			      	<div class="card sticky-action card medium">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      <img class="activator" src="images/article2.png">
@@ -324,7 +330,7 @@
             	</div>
          	</div>
         </footer>
-		<!-- articles -->
+        <!-- articles -->
 			<div id="modal1" class="modal">
 				<div class="modal-content">
 				  <h4 class="center-align">Modal Header <i class="material-icons right" onclick="{$('#modal1').closeModal();}" style="cursor:pointer">close</i></h4>
