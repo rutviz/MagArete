@@ -46,7 +46,10 @@ nav .brand-logo {
 .card:hover {
 	box-shadow: 2rem 3rem 5rem -2rem rgba(0, 0, 0, 0.2);
 }
-
+.thumbnail{
+	width:100%;
+	height:50%;
+}
 .parallax-container {
 	height: 750px;
 	
@@ -60,4 +63,12 @@ nav .brand-logo {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: auto;
+}
+.card{
+	-webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+}
+p .article{
+	height:80%;
 }
