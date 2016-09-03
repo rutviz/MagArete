@@ -158,4 +158,49 @@ svg {
   height: 30%;
 }
 
-/***** EnD of Heading Css *****/
+/***** Card Reveal Css *****/
+
+.banner
+{
+    z-index: -1;
+    position: relative;
+    margin-top: -210px;
+    width: 116%;
+    right: 8%;
+    height: 60%;
+    background-image: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/RQ2Z75PQIN.jpg");
+    background-size: cover;
+    border-bottom: solid 1px lightgrey;
+}
+
+
+.photo
+{
+    z-index: 3;
+    position: relative;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    margin: 0 auto;
+    background-image: url("https://filmshotfreezer.files.wordpress.com/2011/07/untitled-1.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    top: 50px;
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+   
+}
+
+ul{
+	padding: 0;
+    margin-top: 35%;
+    list-style-type: none;
+    text-align: center;
+}
+
+b{
+	font-size: 20px;
+}
+
