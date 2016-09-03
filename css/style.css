@@ -22,6 +22,9 @@ main {
 	color: #4CAF50;
 	border-radius: 5px solid black; 
 } 
+.card.medium .card-image{
+	max-height:55%;
+}
 
 nav .brand-logo {
 	padding-left: 15px;
