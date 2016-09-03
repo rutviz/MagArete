@@ -2,6 +2,7 @@
   <html>
     <head>
     <title>MagArete: An E-Magazine</title>
+    <meta charset="UTF-8">
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -9,6 +10,7 @@
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/style.css"/>
       <link rel="stylesheet" href="css/article.css"/>
+    
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -23,14 +25,6 @@
       	 $('.parallax').parallax();
       	 $('.modal-trigger').leanModal();
       });
-
-      var options = [
-	{selector: '#row1', offset: 1000, callback: 'makeVisible("#row1", "bounceInUp")'},
-	{selector: '#row2', offset: 2000, callback: 'makeVisible("#row2", "bounceInUp")'},
-	{selector: '#row3', offset: 3000, callback: 'makeVisible("#row3", "bounceInUp")'}
-
-	];
-	Materialize.scrollFire(options);
 
 	
 
@@ -72,9 +66,40 @@
     </div>
   </nav>
   </div>
-	<!-- Flapper text-->
 	
-	
+	<!-- Heading -->
+
+	<div id="title">
+		<svg viewBox="0 0 1000 80">
+		  <!-- Symbol with text-->
+		  <symbol id="s-text">
+		    <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text--line">Technology</text>
+		  </symbol>
+		  <!-- Clippath with text-->
+		  <clippath id="cp-text">
+		    <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text--line">Technology</text>
+		  </clippath>
+
+		  <!-- Group for shadow-->
+		  <g clip-path="url(#cp-text)" class="shadow">
+		    <rect width="100%" height="100%" class="anim-shape anim-shape--shadow"></rect>
+		  </g>
+		  
+		  <!-- Group with clippath for text-->
+		  <g clip-path="url(#cp-text)" class="colortext">
+		    <rect width="100%" height="100%" class="shape"></rect>
+		    <rect width="79%" height="100%" class="anim-shape"></rect>
+		    <rect width="68%" height="100%" class="anim-shape"></rect>
+		    <rect width="57%" height="100%" class="anim-shape"></rect>
+		    <rect width="46%" height="100%" class="anim-shape"></rect>
+		    <rect width="35%" height="100%" class="anim-shape"></rect>
+		  </g>
+
+		  <!-- Transparent copy of text to keep patterned text selectable-->
+		  <use xlink:href="#s-text" class="text--transparent"></use>
+		</svg>
+	</div> 
+
 	<!-- Parallex Effect -->
 
 	    <div class="parallax-container hide-on-med-and-down">
