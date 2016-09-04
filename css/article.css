@@ -1,42 +1,133 @@
-@import url(https://fonts.googleapis.com/css?family=Francois+One|Roboto:400,300,300italic,400italic,900,900italic,700,500);
-.article p{
-text-align:justify;
-text-justify: inter-word;
-color: rgba(0,0,0,.6);
-background-color: #dadada;
-text-shadow: rgba(0,0,0,.2) 2px 6px 5px,rgba(255,255,255,.4) 0 -4px 30px;
-font-family: 'Hoefler Text' , Georgia , 'Times New Roman' , serif;
-font-weight: 200;
-font-size: 1.30em;
-letter-spacing: .1em;
-line-height: 1.35em;
-margin:0px;
-color:#6a7274;
-text-transform: capitalize;
-padding:20px;
-}
-i{
-	font-size:60px;
-}
-h2{
-    
-	     text-align:center;
-  color: #616161;
-background-color: #bababa;
-text-shadow: #e0e0e0 1px 1px 0;
-}
-h1
-{
 
-   text-align:center;
-   font-family: times, Times New Roman, times-roman, georgia, serif,Fruktur;
- color: #444;
- margin: 0;
- padding: 0px 0px 6px 0px;
- font-size: 51px;
- line-height: 44px;
- letter-spacing: -2px;
- font-weight: bold;
-   }
-   
-     
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+body{
+  width: 100%;
+  display: inline-block;
+}
+
+pre {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 16px;
+    text-align: justify;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+a {
+  color: #0F5257;
+}
+
+i{
+  font-size: 40px;
+}
+
+b{
+  font-weight: 600;
+}
+
+.c-posts {
+  display: block;
+  flex-wrap: wrap;
+  align-items: top;
+  padding: 5%;
+}
+.c-posts__item {
+  flex-grow: 1;
+  padding-bottom: 2em;
+}
+.c-posts__item:first-child {
+  flex-grow: 2;
+}
+
+@media all and (min-width: 600px) {
+  .c-posts__item {
+    flex-basis: 50%;
+    padding-right: 5%;
+  }
+  .c-posts__item:first-child {
+    flex-basis: 100%;
+  }
+}
+@media all and (min-width: 1000px) {
+  .c-posts__item {
+    flex-basis: 33%;
+  }
+  .c-posts__item:first-child {
+    flex-basis: 66%;
+  }
+}
+@media all and (min-width: 1400px) {
+  .c-posts__item {
+    flex-basis: 25%;
+  }
+  .c-posts__item:first-child {
+    flex-basis: 50%;
+  }
+}
+
+/* Other Non-Flexbox Related Styles */
+.c-header,
+.c-footer {
+  background: #EDD382;
+  text-align: center;
+  padding: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+.c-header h1, .c-header h2, .c-header p,
+.c-footer h1,
+.c-footer h2,
+.c-footer p {
+  max-width: 40em;
+  margin: 0 auto;
+}
+.c-header h1:not(:last-child), .c-header h2:not(:last-child), .c-header p:not(:last-child),
+.c-footer h1:not(:last-child),
+.c-footer h2:not(:last-child),
+.c-footer p:not(:last-child) {
+  margin-bottom: 1em;
+}
+.c-header h1,
+.c-footer h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.c-header a,
+.c-footer a {
+  color: #000;
+}
+
+.c-footer p {
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', Times, serif;
+  line-height: 1.6em;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: calc(130% + 1vw);
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
