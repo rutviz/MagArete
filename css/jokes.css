@@ -67,7 +67,7 @@ nav .brand-logo {
 /*********** Parallax Css **********/
 
 .parallax-container {
-	height: 350px;
+	height: 450px;
 	
     background-position: bottom;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@ p .article{
 }
 
 .shape{
-	fill: #2979FF;
+	fill: #ec407a;
 }
 .colortext .anim-shape:nth-child(1) {
   fill: #42a5f5;
