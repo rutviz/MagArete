@@ -37,6 +37,7 @@
       	$(".button-collapse").sideNav();
       	 $('.parallax').parallax();
       	 $('.modal-trigger').leanModal();
+      	  $('.scrollspy').scrollSpy();
       });
       
       </script>
@@ -60,6 +61,12 @@
 				</div>
 			</header></div>
 
+
+			
+  
+        
+
+
 	<!-- Dropdown Structure -->
 		<ul id="dropdown1" class="dropdown-content">
 		  <li><a href="tech.html">Technical</a></li>
@@ -73,12 +80,14 @@
 		<ul id="dropdown2" class="dropdown-content">
 		  <li><a href="jokes.html">Jokes</a></li>  
 		  <li><a href="poems.html">Poems</a></li>
+		  <li><a href="poems.html">Posters</a></li>
 		  <li><a href="puzzles.html">Puzzles</a></li>  
 		  <li><a href="stories.html">Stories</a></li>
 		</ul>
-		<ul id="dropdown" class="dropdown-content">
+		<ul id="dropdown3" class="dropdown-content">
 		  <li><a href="jokes.html" style="border-bottom:1px solid #DDD">Jokes</a></li>
 		  <li><a href="poems.html" style="border-bottom:1px solid #DDD">Poems</a></li>
+		  <li><a href="poems.html" style="border-bottom:1px solid #DDD">Posters</a></li>
 		  <li><a href="puzzles.html" style="border-bottom:1px solid #DDD">Puzzles</a></li>
 		  <li><a href="stories.html">Stories</a></li>
 		</ul>
@@ -91,20 +100,20 @@
 	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 	      <ul class="right hide-on-med-and-down">
 	        <li><a href="index.html">Home</a></li>
-	        
 
 	        <!-- Dropdown Trigger -->
 	      <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
-	      <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown">Artista<i class="material-icons right">arrow_drop_down</i></a></li>
+	      <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown3">Artista<i class="material-icons right">arrow_drop_down</i></a></li>
 	        <li><a href="#1">PU Happenings</a></li>
 	        <li><a href="#1">About</a></li>
 	      </ul>
-	      <ul class="side-nav" id="mobile-demo">
-	        <li><a href="index.html">Home</a></li>
-	        <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
-	        <li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown2">Artista<i class="material-icons right">arrow_drop_down</i></a></li>
-	        <li><a href="#1">PU Happenings</a></li>
-	        <li><a href="#1">About</a></li>
+	      <ul class="side-nav left-align collapsible" data-collapsible="accordion" id="mobile-demo">
+	       	<li><a href="#">Home</a></li>
+	       	<li><div class="collapsible-header"><a href="#"><i class="material-icons right">arrow_drop_down</i>Article</a></div><div class="collapsible-body"><a href="tech.html">Tech</a><a href="non-tech.html">Non-Tech</a></div></li>
+	       	<li><div class="collapsible-header"><a href="#"><i class="material-icons right">arrow_drop_down</i>Artista</a></div><div class="collapsible-body"><a href="jokes.html">Jokes</a><a href="poster.html">Poster</a><a href="#">Poems</a><a href="#">Puzzles</a><a href="#">Stories</a></div></li>
+	       	<li><a href="#">PU Happening</a></li>
+	       	<li><a href="#">About</a></li> 
+	       </ul>
 	    </div>
   </nav>
   </div>
@@ -147,7 +156,7 @@
 		</div>
 		
 	<!-- Cards -->	
-      <div class="row" id="row1"> 
+      <div class="row section scrollspy" id="row1"> 
     	<div class="row">
 			    <div class="col m3">
 			      	<div class="card sticky-action card medium">
@@ -432,10 +441,7 @@
 			  		</div>
 			   </div>
 		</div> 
-		<br> <br> 
-	</div>
-
-
+	
 	<!-- Footer -->
 		<footer class="page-footer cyan lighten-2">
 	        <div class="container">
@@ -479,6 +485,10 @@
 	            </div>
 	        </div>
          
+  
+        
+
+
          	<div class="footer-copyright">
             	<div class="container">
             	&copy; 2016 Copyright MagArete
