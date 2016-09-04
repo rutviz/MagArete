@@ -1,0 +1,216 @@
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Fugaz+One';
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+	background-color: #F2F2F2;
+	color: #4CAF50;
+}
+
+main {
+   flex: 1 0 auto;
+}
+
+#heading { 
+	font-family: 'Lobster', cursive;
+	font-weight: 500;
+	text-align: center;
+	font-size: 50px;
+	margin-top: 5px;
+	color: #4CAF50;
+	border-radius: 5px solid black; 
+} 
+.card.medium .card-image{
+	max-height:55%;
+}
+
+nav .brand-logo {
+	padding-left: 15px;
+}
+
+#name {
+	 text-align: center;
+	 font-size: 35px;
+	 font-weight: 500;
+	 font-family: 'Kavoon', cursive;
+}
+
+.row {
+	margin-left: 4%;
+	margin-top: 3%;
+}
+
+.card:hover {
+	box-shadow: 4rem 4rem 5rem -2rem rgba(0, 0, 0, 0.4);
+	-webkit-transform:scale(1.05);
+	transform:scale(1.05);
+}
+
+/*********** Thumbnail Css **********/
+
+.thumbnail{
+	width:100%;
+	height:50%;
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	-ms-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+.thumbnail:hover{
+	-webkit-transform:scale(1.08);
+	transform:scale(1.08);
+}
+
+/*********** Parallax Css **********/
+
+.parallax-container {
+	height: 450px;
+	
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#par1 {
+	height: 450px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.card{
+	-webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+}
+p .article{
+	height:80%;
+}
+
+/********  Starting of Heading text  *********/
+
+.text--transparent {
+  fill: transparent;
+}
+
+.anim-shape {
+  -webkit-transform-origin: 0 150px;
+  -ms-transform-origin: 0 150px;
+  transform-origin: 0 150px;
+  -webkit-transform: scale(0, 1) translate(0, 0);
+  -ms-transform: scale(0, 1) translate(0, 0);
+  transform: scale(0, 1) translate(0, 0);
+  -webkit-animation: moving-panel 6s infinite alternate;
+  animation: moving-panel 6s infinite alternate;
+}
+
+.shape{
+	fill: #43a047;
+}
+.colortext .anim-shape:nth-child(1) {
+  fill: #42a5f5;
+}
+.colortext .anim-shape:nth-child(2) {
+  fill: #F2385A;
+}
+.colortext .anim-shape:nth-child(3) {
+  fill: #F5A503;
+}
+.colortext .anim-shape:nth-child(4) {
+  fill: #5D4037;
+}
+.colortext .anim-shape:nth-child(5) {
+  fill: #56D9CD;
+}
+.colortext .anim-shape:nth-child(6) {
+  fill: #3AA1BF;
+}
+
+
+@-webkit-keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+@keyframes moving-panel {
+  100% {
+    -webkit-transform: scale(1, 1) translate(20px, 0);
+    transform: scale(1, 1) translate(20px, 0);
+  }
+}
+/* Other stuff */
+
+#title {
+  background: #E1F5FE;
+  font-family: 'Fugaz One', cursive;
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+   max-height: 3%;
+}
+
+svg {
+  position: absoulte;
+  width: 100%;
+  height: 30%;
+}
+
+/***** Card Reveal Css *****/
+
+.banner
+{
+    z-index: -1;
+    position: relative;
+    margin-top: -210px;
+    width: 116%;
+    right: 8%;
+    height: 60%;
+    background-image: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/RQ2Z75PQIN.jpg");
+    background-size: cover;
+    border-bottom: solid 1px lightgrey;
+}
+
+
+.photo
+{
+    z-index: 3;
+    position: relative;
+    border-radius: 50%;
+    height: 55%;
+    width: 65%;
+    background-color: white;
+    margin: 0 auto;
+    background-image: url("https://filmshotfreezer.files.wordpress.com/2011/07/untitled-1.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    top: 50px;
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+   
+}
+
+.imgs{
+    border: 0.5px solid lightgrey;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 0px 5px 2px rgba(0,0,0,0.3);
+    -webkit-box-shadow:  2px 0px 5px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow:  2px 0px 5px 2px rgba(0,0,0,0.3);
+}
+
+ul{
+	padding: 0;
+    margin-top: 30%;
+    list-style-type: none;
+    text-align: center;
+}
+
+b{
+	font-size: 20px;
+}
+
