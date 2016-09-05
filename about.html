@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>About MagArete: An E-Magazine</title>
+	<title>MagArete: An E-Magazine</title>
 	<meta charset="UTF-8">
 	<!--Import Icons & Font-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,6 +11,7 @@
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/article.css" />
+
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- pre loader -->
@@ -37,6 +38,7 @@
 			$(".button-collapse").sideNav();
 			$('.parallax').parallax();
 			$('.modal-trigger').leanModal();
+			$('.scrollspy').scrollSpy();
 		});
 	</script>
 </head>
@@ -59,53 +61,30 @@
 		</header>
 	</div>
 
-	<!-- Dropdown Structure -->
-	<ul id="dropdown1" class="dropdown-content">
-		<li><a href="tech.html">Technical</a></li>
-		<li><a href="non-tech.html">Non-Tech</a></li>
-	</ul>
-	<ul id="dropdown" class="dropdown-content">
-		<li><a href="tech.html" style="border-bottom:1px solid #DDD">Technical</a></li>
-		<li><a href="non-tech.html">Non-Tech</a></li>
-	</ul>
-
-	<ul id="dropdown2" class="dropdown-content">
-		<li><a href="jokes.html">Jokes</a></li>
-		<li><a href="poems.html">Poems</a></li>
-		<li><a href="puzzles.html">Puzzles</a></li>
-		<li><a href="stories.html">Stories</a></li>
-	</ul>
-	<ul id="dropdown" class="dropdown-content">
-		<li><a href="jokes.html" style="border-bottom:1px solid #DDD">Jokes</a></li>
-		<li><a href="poems.html" style="border-bottom:1px solid #DDD">Poems</a></li>
-		<li><a href="puzzles.html" style="border-bottom:1px solid #DDD">Puzzles</a></li>
-		<li><a href="stories.html">Stories</a></li>
-	</ul>
-
 	<!-- Navigation Bar -->
 	<div class="navbar-fixed">
 		<nav>
-			<div class="nav-wrapper cyan lighten-2">
+			<div class="nav-wrapper red accent-3">
 				<a href="#!" class="brand-logo">MagArete</a>
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="index.html">Home</a></li>
-					<!-- Dropdown Trigger -->
-					<li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
-					<li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown">Artista<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a href="tech.html">Technical</a></li>
+					<li><a href="non-tech.html">Non-Technical</a></li>
 					<li><a href="#1">PU Happenings</a></li>
 					<li><a href="about.html">About</a></li>
 				</ul>
 				<ul class="side-nav" id="mobile-demo">
 					<li><a href="index.html">Home</a></li>
-					<li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">Articles<i class="material-icons right">arrow_drop_down</i></a></li>
-					<li><a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown2">Artista<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li><a href="tech.html">Technical</a></li>
+					<li><a href="non-tech.html">Non-Technical</a></li>
 					<li><a href="#1">PU Happenings</a></li>
 					<li><a href="about.html">About</a></li>
 				</ul>
 			</div>
 		</nav>
 	</div>
+
 
 	<!-- Heading -->
 
@@ -305,4 +284,5 @@
 	<script src="js/pathLoader.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
