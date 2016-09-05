@@ -107,10 +107,10 @@ p .article{
 }
 
 .shape{
-	fill: #43a047;
+	fill: #283593;
 }
 .colortext .anim-shape:nth-child(1) {
-  fill: #42a5f5;
+  fill: #283593;
 }
 .colortext .anim-shape:nth-child(2) {
   fill: #F2385A;
@@ -144,7 +144,7 @@ p .article{
 /* Other stuff */
 
 #title {
-  background: #E1F5FE;
+  background: #F2F2F2;
   font-family: 'Fugaz One', cursive;
   font-size: 50px;
   font-weight: 500;

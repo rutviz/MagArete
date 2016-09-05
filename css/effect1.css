@@ -71,18 +71,28 @@
 
 .ip-header .ip-loader svg path {
 	fill: none;
-	stroke-width: 6;
+	stroke-width: 2;
 }
 
 .ip-header .ip-loader svg path.ip-loader-circlebg {
-	stroke: #ddd;
+	fill: #3E2723;
+	
+}
+
+
+.ip-header .ip-loader svg path.ip-loader-c {
+	-webkit-transition: stroke-dashoffset 0.2s;
+	transition: stroke-dashoffset 0.2s;
+	 fill: #F44336;
 }
 
 .ip-header .ip-loader svg path.ip-loader-circle {
 	-webkit-transition: stroke-dashoffset 0.2s;
 	transition: stroke-dashoffset 0.2s;
-	stroke: #ef6e7e;
+	 fill: #00AEEF;
 }
+
+
 
 /* Content */
 .ip-main {
@@ -103,17 +113,7 @@
 	line-height: 1;
 }
 
-.browser {
-	margin: 0 auto;
-	padding-top: 8%;
-	min-height: 400px;
-	max-width: 1000px;
-	width: 100%;
-	border-radius: 8px;
-	background: #fff url(../img/browser.png) no-repeat 50% 0;
-	background-size: 100%;
-	color: #d3d3d3;
-}
+
 
 .box {
 	float: left;
@@ -249,8 +249,8 @@
 
 .loaded .ip-main .browser,
 .loaded .ip-main .browser .box:first-child {
-	-webkit-animation-delay: 0.1s;
-	animation-delay: 0.1s;
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
 }
 
 .loaded .ip-main .browser .box:nth-child(2) {

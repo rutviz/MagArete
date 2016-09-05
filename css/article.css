@@ -1,5 +1,4 @@
 
-@import 'https://fonts.googleapis.com/css?family=Open+Sans';
 
 body{
   width: 100%;
@@ -17,6 +16,25 @@ pre {
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
+.pattern {
+  min-height:50px;
+}
+
+#zig-zag1 {
+background: 
+linear-gradient(140deg, #EDD382 25%, transparent 25%) -74px 0,
+linear-gradient(220deg, #EDD382 25%, transparent 25%) -74px 0;
+background-size: 50px 50px;
+background-color: #ecf0f1;
+}
+
+#zig-zag2 {
+background: 
+linear-gradient(45deg, #EDD382 25%, transparent 25%) -74px 0,
+linear-gradient(315deg, #EDD382 25%, transparent 25%) -74px 0;
+background-size: 50px 50px;
+background-color: #ecf0f1;
+}
 
 a {
   color: #0F5257;
@@ -28,6 +46,7 @@ i{
 
 b{
   font-weight: 600;
+  font-size: 23px;
 }
 
 .c-posts {
@@ -71,16 +90,30 @@ b{
 }
 
 /* Other Non-Flexbox Related Styles */
-.c-header,
-.c-footer {
+.c-header {
   background: #EDD382;
   text-align: center;
+  margin-bottom: -20px;
+  height: 200px;
   padding: 2em;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.4em;
   font-weight: 300;
   line-height: 1.6em;
 }
+
+.c-footer{
+  background: #EDD382;
+  text-align: center;
+  margin-bottom: -20px;
+  height: 120px;
+  padding: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
 .c-header h1, .c-header h2, .c-header p,
 .c-footer h1,
 .c-footer h2,
