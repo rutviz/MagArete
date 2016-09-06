@@ -20,6 +20,20 @@ pre {
   min-height:50px;
 }
 
+#header {
+	font-size: 150%;
+    width: 90%;
+    font-weight: 800;
+    margin-left: 6%;
+}
+
+#header1 {
+	font-size: 230%;
+    width: 90%;
+    font-weight: 700;
+    margin-left: 6%;
+}
+
 #zig-zag1 {
 background: 
 linear-gradient(140deg, #EDD382 25%, transparent 25%) -74px 0,

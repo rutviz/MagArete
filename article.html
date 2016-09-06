@@ -33,7 +33,11 @@
       	$(".button-collapse").sideNav();
       	$(".modal-trigger").leanModal();
       });
-      
+
+      function shut(){
+          $('#modal1').closeModal();
+      }
+
       </script>
 	  
 	  <!-- For Share -->
@@ -46,46 +50,62 @@
   
   <!-- Navigation Bar -->
   <div class="navbar-fixed">
-		<nav>
-    <div class="nav-wrapper green darken-2">
-      <a href="index.html" class="brand-logo">MagArete</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <a href="#modal1" class="right modal-trigger"><i class="material-icons">share</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tech.html">Technical</a></li>
-        <li><a href="non-tech.html">Non-Technical</a></li>
-		<li><a href="#1">PU Happenings</a></li>
-        <li><a href="#1">About</a></li>
-      </ul>
-      <ul class="side-nav hov" id="mobile-demo" style="">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tech.html">Technical</a></li>
-        <li><a href="non-tech.html">Non-Technical</a></li>
-		<li><a href="#1">PU Happenings</a></li>
-        <li><a href="#1">About</a></li></ul>
-    </div>
-  </nav>
+    <nav>
+        <div class="nav-wrapper yellow darken-3">
+          <a href="index.html" class="brand-logo">MagArete</a>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons" style="margin-left: 20%;">menu</i></a>
+          <a href="#modal1" class="right hide-on-large-only modal-trigger"><i class="material-icons" style="margin-left: -30%;">share</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tech.html">Technical</a></li>
+            <li><a href="non-tech.html">Non-Technical</a></li>
+        <li><a href="#1">PU Happenings</a></li>
+            <li><a href="#1">About</a></li>
+          </ul>
+        </div>
+    </nav>
   </div>
+
+  <ul id="slide-out" class="side-nav left-align">
+      <li><div class="userView">
+        <img class="background" src="images/2.jpg">
+            <a href="#!user"><img class="circle" src="images/Harshit.jpg"></a>
+            <a href="#!name"><span class="white-text name">Harshit Kumar Singh</span></a>
+            <a href="#!email"><span class="white-text email">harshitks2203@gmail.com</span></a>
+          </div>
+    </li>
+  
+      <li><a class="waves-effect" href="index.html"><i class="material-icons">home</i>Home</a></li>
+    <li><a class="waves-effect" href="tech.html"><i class="material-icons">code</i>Technical</a></li>
+    <li><a class="waves-effect" href="non-tech.html"><i class="material-icons">nature_people</i>Non-Technical</a></li>
+    <li><a class="waves-effect" href="#"><i class="material-icons"><i class="material-icons">work</i></i>PU Happening</a></li>
+    <li><a class="waves-effect" href="#!"><i class="material-icons">info_outline</i>About</a></li>
+  </ul>
 <!-- Header -->
   <header class="c-header">
-  <h1>Five Instagram Marketing Tools for Small Business</h1>
+    <div id="header" class="hide-on-large-only">Five Instagram Marketing Tools for Small Business</div>
+    <div id="header1" class="hide-on-med-and-down">Five Instagram Marketing Tools for Small Business</div>
 
       <!-- Share Button -->
     <div class="social-buttons hide-on-med-and-down">
       <a href="http://www.facebook.com/sharer.php?u=https://MagArete.in" target="_blank" class="social-button facebook"><i class="fa fa-facebook"></i></a>
       <a href="https://twitter.com/share?url=https://MagArete.in&amp;text=Checkout%20my%20article%20on%20Parul%20E-Magazine&amp;hashtags=MagArete" target="_blank" class="social-button twitter"><i class="fa fa-twitter"></i></a>
-      <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank" class="social-button google"><i class="fa fa-google"></i></a>
+      <a href="https://plus.google.com/share?url=https://MagArete.in" target="_blank" class="social-button google"><i class="fa fa-google"></i></a>
     
     </div>
-        <!-- For Mobile -->
+
+    <!-- For Mobile -->
 		<div id="modal1" class="modal bottom-sheet">
 			<div class="modal-content">
+      <p>Share with</p>
 				<div class="collection">
-					<a href="#" class="collection-item disabled">Share with</a>
-					<a href="#" class="collection-item " style="color:#3b5998"><i class="fa fa-facebook"></i> Facebook</a>
-					<a href="#" class="collection-item "style="color:#d34836"><i class="fa fa-google"></i> G-plus</a>
-					<a href="#" class="collection-item " style="color:#4099ff"><i class="fa fa-twitter"></i> Twitter</a>	
+					<a href="whatsapp://send?text=Hey checkout my article at <a href="www.MagArete.in/article"" class="collection-item" data-action="share/whatsapp/share" style="color:#4dc247;" onclick="shut();"> <i class="fa fa-whatsapp"></i> Whatsapp</a>
+					
+          <a href="http://www.facebook.com/sharer.php?u=https://MagArete.in" target="_blank" class="collection-item " style="color:#3b5998" onclick="shut();"><i class="fa fa-facebook"></i> Facebook</a>
+					
+          <a href="https://plus.google.com/share?url=https://MagArete.com" target="_blank" class="collection-item "style="color:#d34836" onclick="shut();"><i class="fa fa-google"></i> G-plus</a>
+					
+          <a href="https://twitter.com/share?url=https://MagArete.in&amp;text=Checkout%20my%20article%20on%20Parul%20E-Magazine&amp;hashtags=MagArete" target="_blank" class="collection-item " style="color:#4099ff"  onclick="shut();"><i class="fa fa-twitter"></i> Twitter</a>	
 				</div>
 				
 			</div>
@@ -140,7 +160,7 @@ So what do you think? Wanna join the trend and use these amazing Instagram tools
 
 
   <!-- Footer -->
-    <footer class="page-footer brown darken-2">
+    <footer class="page-footer yellow darken-3">
           <div class="container">
               <div class="row">
                 <div class="col l6 s12">
@@ -167,7 +187,7 @@ So what do you think? Wanna join the trend and use these amazing Instagram tools
               </div>
           </div>
          
-          <div class="footer-copyright brown darken-3">
+          <div class="footer-copyright yellow darken-4">
               <div class="container">
                 &copy; 2016 Copyright MagArete
                 <a class="white-text text-white right" href="#!">Designed and Developed by Parul University</a>

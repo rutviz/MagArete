@@ -50,10 +50,10 @@
  <div id="ip-container" class="ip-container">
 			<!-- initial header -->
 			<header class="ip-header">
-				<h1 class="ip-logo"> <center style="color: #000; margin-top: -15px;"> MagArete </center>
+				<h1 class="ip-logo"> 
 				<svg class="ip-inner" width="10%" height="10%" viewBox="0 0 200 90" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">  
 
-				<div class="ip-loader">
+				<div class="ip-loader"> <div id="logo"> <img src="images/logo.png" style="min-height: 10%; max-width: 25%"><br><br> </div>
 					<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 100 550">
 					
 						
@@ -95,26 +95,36 @@
 	<!-- Navigation Bar -->
 	<div class="navbar-fixed">
 		<nav>
-    <div class="nav-wrapper green darken-2">
-      <a href="index.html" class="brand-logo">MagArete</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tech.html">Technical</a></li>
-        <li><a href="non-tech.html">Non-Technical</a></li>
-		<li><a href="#1">PU Happenings</a></li>
-        <li><a href="#1">About</a></li>
-      </ul>
-      <ul class="side-nav hov" id="mobile-demo" style="">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tech.html">Technical</a></li>
-        <li><a href="non-tech.html">Non-Technical</a></li>
-		<li><a href="#1">PU Happenings</a></li>
-        <li><a href="#1">About</a></li></ul>
-    </div>
-  </nav>
-  </div>
+		    <div class="nav-wrapper green darken-2">
+		      <a href="index.html" class="brand-logo">MagArete</a>
+		      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+		      <ul class="right hide-on-med-and-down">
+		        <li><a href="index.html">Home</a></li>
+		        <li><a href="tech.html">Technical</a></li>
+		        <li><a href="non-tech.html">Non-Technical</a></li>
+				<li><a href="#1">PU Happenings</a></li>
+		        <li><a href="#1">About</a></li>
+		      </ul>
+		    </div>
+		</nav>
+	</div>
+
+	<ul id="slide-out" class="side-nav left-align">
+	    <li><div class="userView">
+		    <img class="background" src="images/2.jpg">
+	  		    <a href="#!user"><img class="circle" src="images/Harshit.jpg"></a>
+  			    <a href="#!name"><span class="white-text name">Harshit Kumar Singh</span></a>
+		        <a href="#!email"><span class="white-text email">harshitks2203@gmail.com</span></a>
+	        </div>
+		</li>
 	
+	    <li><a class="waves-effect" href="index.html"><i class="material-icons">home</i>Home</a></li>
+		<li><a class="waves-effect" href="tech.html"><i class="material-icons">code</i>Technical</a></li>
+		<li><a class="waves-effect" href="non-tech.html"><i class="material-icons">nature_people</i>Non-Technical</a></li>
+		<li><a class="waves-effect" href="#"><i class="material-icons"><i class="material-icons">work</i></i>PU Happening</a></li>
+		<li><a class="waves-effect" href="#!"><i class="material-icons">info_outline</i>About</a></li>
+	</ul>
 	<!-- Heading -->
 
 	<div id="title">
@@ -162,8 +172,10 @@
 					    </div>
 					    
 					    <div class="card-content">
-					      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i></span>
-						      <p style="width: 100%; display: inline-block; overflow: none;color:black">5 Instagram Marketing Tools for Small Business</p>
+						<span class="card-title activator grey-text text-darken-4"><i class="material-icons right">info_outline</i> 5 Instagram Marketing Tools for Small Business</span>
+						      					      
+
+					      
 						</div>
 
 					 <!-- Card Reveal -->    
@@ -171,14 +183,14 @@
 					    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
 					      <div class="photo"> <img class="imgs" src="images/Harshit.jpg"> </div>
 				            <div class="banner"></div>
-				            <ul>
+				            <ul class="cardnames">
 				                <li><b>Harshit Kumar Singh</b></li>
 				                <li>Web Developer</li>
 				            </ul>
 					    </div>
 
 					    <div class="card-action">
-					    	<center> <a href="article.html" class="btn waves-effect waves-red"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
+					    	<center> <a href="article.html" class="btn waves-effect green darken-2"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
 					    </div>
 
 			  		</div>
@@ -193,22 +205,22 @@
 					    
 					    <div class="card-content">
 					      <span class="card-title activator grey-text text-darken-4">Article Title<i class="material-icons right">info_outline</i></span>
-						      <p style="width: 100%; display: inline-block; overflow: none;">This is a place for Article Description</p>
+						      
 						</div>
 					    
 					    <!-- Card Reveal -->    
 					    <div class="card-reveal">
 					    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-					      <div class="photo"> </div>
+					      <div class="photo"> <img class="imgs" src="images/Harshit.jpg"> </div>
 				            <div class="banner"></div>
-				            <ul>
+				            <ul class="cardnames">
 				                <li><b>Harshit Kumar Singh</b></li>
 				                <li>Web Developer</li>
 				            </ul>
 					    </div>
 
 					    <div class="card-action">
-					    	<center> <a href="article.html" class="btn waves-effect waves-red"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
+					    	<center> <a href="article.html" class="btn waves-effect green darken-2"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
 					    </div>
 			  		</div>
 		  		</div>
@@ -221,22 +233,22 @@
 					    
 					    <div class="card-content">
 					      <span class="card-title activator grey-text text-darken-4">Article Title<i class="material-icons right">info_outline</i></span>
-						      <p style="width: 100%; display: inline-block; overflow: none;">This is a place for Article Description</p>
+						    
 						</div>
 					    
 					    <!-- Card Reveal -->    
 					    <div class="card-reveal">
 					    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-					      <div class="photo"> </div>
+					      <div class="photo"> <img class="imgs" src="images/Harshit.jpg"> </div>
 				            <div class="banner"></div>
-				            <ul>
+				            <ul class="cardnames">
 				                <li><b>Harshit Kumar Singh</b></li>
 				                <li>Web Developer</li>
 				            </ul>
 					    </div>
 
 					    <div class="card-action">
-					    	<center> <a href="article.html" class="btn waves-effect waves-red "><i class="fa fa-file-text-o"></i> Read Article</a> </center>
+					    	<center> <a href="article.html" class="btn waves-effect green darken-2 "><i class="fa fa-file-text-o"></i> Read Article</a> </center>
 					    </div>
 			  		</div>
 			   </div>
@@ -248,7 +260,7 @@
 		<!-- Parallex Effect -->
 
 	    <div class="parallax-container hide-on-med-and-down" id="par1">
-    		<div class="parallax"><img src="images/back2.jpg" style=" overflow: none; display: block;"></div>
+    		<div class="parallax"><img src="images/6.jpg" style=" overflow: none; display: block;"></div>
   		</div>
 		<div class="hide-on-large-only">
 			<img src="images/back2.jpg" style="width:100%;">
@@ -264,23 +276,24 @@
 					    
 					    <div class="card-content">
 					      <span class="card-title activator grey-text text-darken-4">Article Title<i class="material-icons right">info_outline</i></span>
-						      <p style="width: 100%; display: inline-block; overflow: none;">This is a place for Article Description</p>
+						     
 						</div>
 					    
 					    <!-- Card Reveal -->    
 					    <div class="card-reveal">
 					    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-					      <div class="photo"> </div>
+					      <div class="photo"> <img class="imgs" src="images/Harshit.jpg"> </div>
 				            <div class="banner"></div>
-				            <ul>
+				            <ul class="cardnames">
 				                <li><b>Harshit Kumar Singh</b></li>
 				                <li>Web Developer</li>
 				            </ul>
 					    </div>
 
 					    <div class="card-action">
-					    	<center> <a href="#">This is a link</a> </center>
+					    	<center> <a href="article.html" class="btn waves-effect green darken-2"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
 					    </div>
+
 			  		</div>
 			  	</div>
 		  		
@@ -292,7 +305,7 @@
 					    
 					    <div class="card-content">
 					      <span class="card-title activator grey-text text-darken-4">Article Title<i class="material-icons right">info_outline</i></span>
-						      <p style="width: 100%; display: inline-block; overflow: none;">This is a place for Article Description</p>
+						      
 						</div>
 					    
 					    <!-- Card Reveal -->    
@@ -307,8 +320,9 @@
 					    </div>
 
 					    <div class="card-action">
-					    	<center> <a href="#">This is a link</a> </center>
+					    	<center> <a href="article.html" class="btn waves-effect green darken-2"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
 					    </div>
+
 			  		</div>
 		  		</div>
 
@@ -320,23 +334,24 @@
 					    
 					    <div class="card-content">
 					      <span class="card-title activator grey-text text-darken-4">Article Title<i class="material-icons right">info_outline</i></span>
-						      <p style="width: 100%; display: inline-block; overflow: none;">This is a place for Article Description</p>
+						      
 						</div>
 					    
 					    <!-- Card Reveal -->    
 					    <div class="card-reveal">
 					    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-					      <div class="photo"> </div>
+					      <div class="photo"> <img class="imgs" src="images/Harshit.jpg"> </div>
 				            <div class="banner"></div>
-				            <ul>
+				            <ul class="cardnames">
 				                <li><b>Harshit Kumar Singh</b></li>
 				                <li>Web Developer</li>
 				            </ul>
 					    </div>
 
 					    <div class="card-action">
-					    	<center> <a href="#">This is a link</a> </center>
+					    	<center> <a href="article.html" class="btn waves-effect green darken-2"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
 					    </div>
+
 			  		</div>
 			   </div>
 			
@@ -346,7 +361,7 @@
 		<!-- Parallex Effect -->
 
 	    <div class="parallax-container hide-on-med-and-down" id="par1">
-    		<div class="parallax"><img src="images/back2.jpg" style=" overflow: none; display: block;"></div>
+    		<div class="parallax"><img src="images/5.jpg" style=" overflow: none; display: block;"></div>
   		</div>
 		<div class="hide-on-large-only">
 			<img src="images/back2.jpg" style="width:100%;">
@@ -362,23 +377,25 @@
 					    
 					    <div class="card-content">
 					      <span class="card-title activator grey-text text-darken-4">Article Title<i class="material-icons right">info_outline</i></span>
-						      <p style="width: 100%; display: inline-block; overflow: none;">This is a place for Article Description</p>
+						      
 						</div>
 					    
 					    <!-- Card Reveal -->    
 					    <div class="card-reveal">
 					    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-					      <div class="photo"> </div>
+					      <div class="photo"> <img class="imgs" src="images/Harshit.jpg"> </div>
 				            <div class="banner"></div>
-				            <ul>
+				            <ul class="cardnames">
 				                <li><b>Harshit Kumar Singh</b></li>
 				                <li>Web Developer</li>
 				            </ul>
 					    </div>
 
 					    <div class="card-action">
-					    	<center> <a href="#">This is a link</a> </center>
+					    	<center> <a href="article.html" class="btn waves-effect green darken-2"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
 					    </div>
+
+
 			  		</div>
 			  	</div>
 		  		
@@ -390,23 +407,24 @@
 					    
 					    <div class="card-content">
 					      <span class="card-title activator grey-text text-darken-4">Article Title<i class="material-icons right">info_outline</i></span>
-						      <p style="width: 100%; display: inline-block; overflow: none;">This is a place for Article Description</p>
+						   
 						</div>
 					    
 					    <!-- Card Reveal -->    
 					    <div class="card-reveal">
 					    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-					      <div class="photo"> </div>
+					      <div class="photo"> <img class="imgs" src="images/Harshit.jpg"> </div>
 				            <div class="banner"></div>
-				            <ul>
+				            <ul class="cardnames">
 				                <li><b>Harshit Kumar Singh</b></li>
 				                <li>Web Developer</li>
 				            </ul>
 					    </div>
 
 					    <div class="card-action">
-					    	<center> <a href="#">This is a link</a> </center>
+					    	<center> <a href="article.html" class="btn waves-effect green darken-2"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
 					    </div>
+
 			  		</div>
 		  		</div>
 
@@ -418,23 +436,24 @@
 					    
 					    <div class="card-content">
 					      <span class="card-title activator grey-text text-darken-4">Article Title<i class="material-icons right">info_outline</i></span>
-						      <p style="width: 100%; display: inline-block; overflow: none;">This is a place for Article Description</p>
+						     
 						</div>
 					    
 					    <!-- Card Reveal -->    
 					    <div class="card-reveal">
 					    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-					      <div class="photo"> </div>
+					      <div class="photo"> <img class="imgs" src="images/Harshit.jpg"> </div>
 				            <div class="banner"></div>
-				            <ul>
+				            <ul class="cardnames">
 				                <li><b>Harshit Kumar Singh</b></li>
 				                <li>Web Developer</li>
 				            </ul>
 					    </div>
 
 					    <div class="card-action">
-					    	<center> <a href="#">This is a link</a> </center>
+					    	<center> <a href="article.html" class="btn waves-effect green darken-2"><i class="fa fa-file-text-o"></i> Read Article</a> </center>
 					    </div>
+
 			  		</div>
 			   </div>
 		</div> 

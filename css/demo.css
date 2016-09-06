@@ -35,7 +35,7 @@ a {
 .demo-2 a { color: #1c9ccd; }
 
 a:hover, a:focus {
-	color: #fff;
+	color: #000;
 }
 
 section {
