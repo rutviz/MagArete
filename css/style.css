@@ -22,7 +22,9 @@ body {
 	color: #4CAF50;
 	border-radius: 5px solid black; 
 } 
-
+.card.medium{
+	height:480px;
+}
 .card.medium .card-image{
 	max-height:55%;
 }
@@ -751,4 +753,10 @@ p .article{
 	
 }.mimg4{
 	background-image: url('../images/contactpic2.png');
+}
+.none{
+	padding:30px;
+	font-family:"Lucida Calligraphy", cursive;
+	background-color:#f2f2f2;
+	color:#000;
 }

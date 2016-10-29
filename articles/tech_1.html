@@ -8,7 +8,7 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
       <!--Import css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
 
     
       <!--Let browser know website is optimized for mobile-->
@@ -19,26 +19,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
-    <link rel="stylesheet" href="css/articlestyle.css">
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script>
-      $( document ).ready(function(){
-        $(".button-collapse").sideNav();
-        $(".modal-trigger").leanModal();
-      });
-
-      function shut(){
-          $('#modal1').closeModal();
-      }
-
-      </script>
+    <link rel="stylesheet" href="../css/articlestyle.css">
      <!-- For Share -->
-      <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-
-        <link rel="stylesheet" href="css/share.css">
+        <link rel="stylesheet" href="../css/.css">
 
   </head>
 
@@ -58,8 +41,6 @@
             <li><a href="tech.html">Technical</a></li>
             <li><a href="non-tech.html">Non-Technical</a></li>
             <li><a href="guest.html">Guest</a></li>
-            <li><a href="csehappening.html">CSE Happenings</a></li>
-            <li><a href="#1">PU Happenings</a></li>
             <li><a href="faq.html">FAQs</a></li>
             <li><a href="#1">Team</a></li>
           </ul>
@@ -71,8 +52,8 @@
       <li><div class="userView">
         <img class="background" src="images/2.jpg">
             <a href="#!user"><img class="circle" src="images/contactpic.png"></a>
-            <a href="#!name"><span class="white-text name">Name</span></a>
-            <a href="#!email"><span class="white-text email">mail@web.xyz</span></a>
+            <a href="#!name"><span class="white-text name">MagArete</span></a>
+            <a href="#!email"><span class="white-text email">Magarete.cse@gmail.com</span></a>
           </div>
     </li>
   
@@ -80,8 +61,6 @@
     <li><a class="waves-effect" href="tech.html"><i class="material-icons">code</i>Technical</a></li>
     <li><a class="waves-effect" href="non-tech.html"><i class="material-icons">nature_people</i>Non-Technical</a></li>
     <li><a class="waves-effect" href="guest.html"><i class="material-icons">contact_mail</i>Guest</a></li>
-    <li><a class="waves-effect" href="csehappening.html"><i class="material-icons">developer_mode</i>CSE Happenings</a></li>
-    <li><a class="waves-effect" href="#"><i class="material-icons"><i class="material-icons">work</i></i>PU Happening</a></li>
     <li><a class="waves-effect" href="faq.html"><i class="material-icons">query_builder</i>FAQs</a></li>
     <li><a class="waves-effect" href="#!"><i class="material-icons">info_outline</i>Team</a></li>
   </ul>
@@ -114,7 +93,7 @@
 
 </header>
 <div class="decoration">
-<main>
+
   <div id="name"><center> BIG DATA: Dreaming Big Enough </center></div>
   
   <article class="content">
@@ -163,7 +142,7 @@
   <br>
   <p><strong>Question: “How to process big data with reasonable cost and time?” </p>
   <p>Answer </p>
-  <img src="big-data.png"> 
+  <img src="../images/big-data.png"> 
   <br>
    <center> <br><h3>“We chose it because we deal with huge amounts of data. Besides, it sounds really cool.” – Larry Page, Google Inc. </h3> </center> 
   </p>
@@ -171,7 +150,7 @@
 
 </main>
 </div>
-<div id="border"> <img src="wave.png"> </div>
+<div id="border"> <img src="../images/wave.png" width="100%"> </div>
 <div id="author"> <center> &middot; An Article by Lokesh Sahu &middot; </center> </div>
   
 
@@ -214,9 +193,18 @@
          	</div>
         </footer>
 
- <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+		<script type="text/javascript" src="../js/jquery-2.2.0.min.js"></script>
+		<script>
+      $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+        $(".modal-trigger").leanModal();
+      });
 
-        <script src="js/index.js"></script>
+      function shut(){
+          $('#modal1').closeModal();
+      }
+
+      </script>
     
   </body>
 </html>
